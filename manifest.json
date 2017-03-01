@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Messenger Quest",
+	"description": "Facebook extension for searching messages by date and time",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["https://m.facebook.com/*"],
+			"js": ["jquery-3.1.1.min.js", "content.js"]
+		}
+	],
+
+	"permissions": [
+		"activeTab",
+		"declarativeContent",
+		"tabs",
+		"https://m.facebook.com/*"
+	]
+}
